@@ -5,11 +5,33 @@ const dns = require("dns")
 
 let hosts = ["5.17.2.147", "188.134.65.67"]
 
+let auth = async (host, user, password) => {
+  console.log(host)
+  if(host) {
+    console.info(host)
+  }
+
+  let headers = await axios.get(host + "/auth").then(r => r.headers)
+  //.then(response)
+
+
+  let data = {
+
+  }
+
+  //axios.post({
+  //  url: host, data: { user, password }
+  // })
+}
+
 export default (req, res) => {
   // Open Chrome DevTools to step through the debugger!
   // debugger;
 
 
-  
-  res.status(200).json({ name: 'Hello, world!' });
+  if(req.headers["Authorization"]) {
+      console.log( "Authorization", req.headers["Authorization"])
+}
+
+  res.status(200).json({ name: 'Hello, world!', hosts });
 };
