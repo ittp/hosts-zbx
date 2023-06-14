@@ -21,7 +21,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <Card>Data</Card>
-        
+      </main>
       <footer className={styles.footer}>
         <a href="https://next.new" target="_blank" rel="noopener noreferrer">
           Created with&nbsp;<b>next.new</b>&nbsp;⚡️
