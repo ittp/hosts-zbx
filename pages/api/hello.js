@@ -3,7 +3,7 @@ const zabbix = require("zabbix-client")
 const axios = require("axios")
 const dns = require("dns")
 
-let hosts = ["5.17.2.147", "188.134.65.67"]
+let hosts = ["5.17.2.147", "188.134.65.67", "194.67.109.159"]
 
 let auth = async (host, user, password) => {
   console.log(host)
@@ -31,6 +31,58 @@ export default (req, res) => {
 
   if(req.headers["Authorization"]) {
       console.log( "Authorization", req.headers["Authorization"])
+}
+
+let q = req.query              
+var gsjson = require('google-spreadsheet-to-json');
+
+gsjson({
+    spreadsheetId: 'abc123456789',
+    // other options...
+})
+.then(function(result) {
+    console.log(result.length);
+    console.log(result);
+})
+.catch(function(err) {
+    console.log(err.message);
+    console.log(err.stack);
+});
+
+
+if(req.query.sid) {
+
+  GNU nano 6.2                                            
+  var gsjson = require('google-spreadsheet-to-json');
+  
+  gsjson({
+    GNU nano 6.2                     gs.js                               
+    var gsjson = require('google-spreadsheet-to-json');
+    
+    gsjson({
+        spreadsheetId: 'abc123456789',
+        // other options...
+    })
+    .then(function(result) {
+        console.log(result.length);
+        console.log(result);
+    })
+    .catch(function(err) {
+        console.log(err.message);
+        console.log(err.stack);
+    });
+    : 'abc123456789',
+      // other options...
+  })
+  .then(function(result) {
+      console.log(result.length);
+      console.log(result);
+  })
+  .catch(function(err) {
+      console.log(err.message);
+      console.log(err.stack);
+  });
+  
 }
 
   res.status(200).json({ name: 'Hello, world!', hosts });
