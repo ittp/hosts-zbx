@@ -1,19 +1,20 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-
+import axios from 'axios';
 let Host = {
-  name: "Name", host: "Host", ip: "IP Address"
-}
+  name: 'Name',
+  host: 'Host',
+  ip: 'IP Address',
+};
+
+
 
 export default function Home() {
+  let Hosts = Object.values(Host).map((item, key) => {
+    return item;
+  });
 
-  let Hosts = Object.values(Host).map((item,key) => {
-
-    return item
-  }
-)
-
-  console.log(Hosts)
+  console.log(Hosts);
   return (
     <div className={styles.container}>
       <Head>

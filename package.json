@@ -10,10 +10,12 @@
   "dependencies": {
     "next": "^13.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0", 
+    "react-dom": "^18.2.0",
     "zabbix-client": "latest",
     "yaml": "latest",
     "axios": "latest",
-    "zabbix-rpc": "latest"
+    "zabbix-rpc": "latest",
+    "antd": "latest",
+    "antd-form-builder": "latest"
   }
 }
