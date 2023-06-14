@@ -8,14 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "antd": "^5.6.1",
+    "antd-form-builder": "^2.1.4",
+    "axios": "latest",
     "next": "^13.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "zabbix-client": "latest",
     "yaml": "latest",
-    "axios": "latest",
-    "zabbix-rpc": "latest",
-    "antd": "latest",
-    "antd-form-builder": "latest"
+    "zabbix-client": "latest",
+    "zabbix-rpc": "latest"
   }
 }
